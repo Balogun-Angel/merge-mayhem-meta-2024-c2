@@ -14,3 +14,33 @@ html is the skeleton of a website basically
 To collect all of this information, we use the `input` element and specify the type of information by using the `type` attribute.
 
 Let’s take a look at a few examples of how the `input` element is used for a variety of types of information.
+
+**Let’s take a look at a typical boilerplate, or standard template, for an HTML file.**
+
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Title of Website</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+   <script src="script.js"></script>
+ </body>
+</html>
+```
+
+In HTML, we denote an element by specifying the name of the element in opening brackets `<>` and closing brackets `</>`. Let’s take the time to highlight the structure of an HTML file and some important elements presented in the boilerplate above.
+
+### Linking JavaScript Files
+
+**Line 9**  `<script src="script.js"></script>` links the JavaScript file to our HTML file.
+
+Let’s break down the syntax used to do this action.
+
+- `<script>`: You may be wondering, why do we use the `script` element to connect JavaScript files instead of the `link` element that is used for CSS files. Unlike CSS styling, JavaScript dynamically changes elements in the HTML document. JavaScript may add, delete, or modify HTML elements. CSS styling can only change the appearance of an element, but cannot modify the structure of the HTML element.
+- `src`: This attribute specifies the file path, or location, of our external resource. In this particular example, the JS file is named `script.js` but you can name your stylesheet anything. Take note that the file path is surrounded by double quotes, `“”`.
+
+You may have noticed that the `<script>` element is placed inside of the `<body>` element. This is different from the `<link>` element for CSS files which is in the `<head>` element. This is because JavaScript files can often affect the HTML elements within the document. To ensure that the JavaScript file does not run before the HTML elements have been loaded on the page, developers tend to place the `<script>` element towards the bottom of the HTML file to avoid potential errors.
