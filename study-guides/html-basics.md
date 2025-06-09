@@ -10,7 +10,6 @@ html is the skeleton of a website basically
 
 **HTML** stands for **H**yper **T**ext **M**arkup **L**anguage. HTML is used to build the skeleton of the website including which elements (text, images, buttons, etc.) should be included and the order in which they appear. Web browsers like Chrome or Safari know how to interpret HTML files and render their contents as an interactive web page.
 
-
 To collect all of this information, we use the `input` element and specify the type of information by using the `type` attribute.
 
 Let’s take a look at a few examples of how the `input` element is used for a variety of types of information.
@@ -34,6 +33,12 @@ Let’s take a look at a few examples of how the `input` element is used for a v
 
 In HTML, we denote an element by specifying the name of the element in opening brackets `<>` and closing brackets `</>`. Let’s take the time to highlight the structure of an HTML file and some important elements presented in the boilerplate above.
 
+- `<!DOCTYPE html>`: This specifies the document type and lets the computer know that we will be working in HTML. Most specifically our document will default to HTML5, which is the most recent major HTML version, unless otherwise specified.
+- `<html>`: This is where we place all of our elements that comprise the contents of our page.
+- `<head>`: This is the container for the elements that have content that does not need to be displayed on the page (like metadata, the title, or, as we will see, scripts and stylesheets).
+- `<meta>`: This is a tag for providing metadata (data about our data) to the page. We can use meta tags to display what character set we are using or for SEO (Search Engine Optimization) purposes.
+- `<title>`: This tag gives the page a title that can be displayed in the tab of your browser.
+- `<body>`: This defines the main content of the HTML page.
 ### Linking JavaScript Files
 
 **Line 9**  `<script src="script.js"></script>` links the JavaScript file to our HTML file.
